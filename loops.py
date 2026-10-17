@@ -104,3 +104,25 @@ for i in name:
     if (i=='a'or i=='e'or i=='i'or i=='o'or i=='u'):
         count+=1
 print("NO. OF TOTAL VOWELS IN THE STRING 'NAME' ARE:",count)
+
+#RANGE FUNCTION IN LOOPS
+#used to generate sequence       =>         range(start,stop, step)
+print("1. Print no from 0 to 5")   
+for i in range(6):                          #by default the stating point is 0
+    print(i)
+
+print("2. Print no. from 1-5")
+for i in range(1,6):                        # for i in range(a,b-1)
+    print(i)
+
+print("3. Print n. from 1 to 10 with a stepping of 1 numbers")
+for i in range(1,10,2):
+    print(i)
+
+#PRINT THE SUM OF FIRST 10 NATURAL NUMBERS
+
+n= int(input("ENTER A NUMBER :"))
+sum=0
+for i in range(1,n+1):
+    sum+=i
+print("SUM:",sum)
