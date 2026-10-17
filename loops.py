@@ -1,3 +1,4 @@
+                               #WHILE LOOPS
 #Infinte loop
 
 while True:
@@ -52,3 +53,54 @@ while(i<=10):
     print(i)
     i+=1
 print("loop exited")
+
+# PRINT ALL THE ODD NO. FROM 1 TO 10 
+# USING CONTINUE
+
+i=0
+
+while (i<10):
+    i+=1
+    if (i%2==0):
+        continue
+    print(i)
+print("these are all the odd numbers from 1 to 10")
+
+#without using CONTINUE
+
+i=1
+while(i<=10):
+    print (i)
+    i+=2
+print("THESE ARE ALL THE ODD NUMBER FROM 1 TO 10")
+
+                                 #fOR LOOPS
+
+string="hello"
+
+#in=> membership operator (used to check the presence)
+for var in string:
+    print(var)
+
+#PRINT HELLO WORLD 5 TIMES
+
+for i in range(5):
+    print("HELLO WORLD")
+
+#COUNT THE NO ID i's IN THE STRING
+string="Artificial Intelligence"
+
+count=0
+for letter in string:
+    if (letter=='i'):
+        count+=1
+print("THE NO. OF i's in string are :",count)
+
+#PRINT THE NO. OF VOWELS PRESENT IN THE GIVEN STRING 
+
+name= "Gargi Dhiman"
+count=0
+for i in name:
+    if (i=='a'or i=='e'or i=='i'or i=='o'or i=='u'):
+        count+=1
+print("NO. OF TOTAL VOWELS IN THE STRING 'NAME' ARE:",count)
