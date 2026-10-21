@@ -13,3 +13,18 @@ for char in word_2:         #prints every character present in te string
 
 print(word_1[2])
 
+                          #SLICING
+
+word= "I love to code in python"
+
+print(word[2:14])
+print(word[:])
+print(word[:12])
+print(word[2:])
+
+#negative slicing
+
+word_1= "Gargi Dhiman is learning python"
+
+print(word_1[-6:])
+print(word_1[-15:-7])
