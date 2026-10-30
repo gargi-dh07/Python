@@ -1,55 +1,66 @@
-# Write a program that takes salary as input. Using conditional statements,
-# calculate the based on these rules:
-# Q1 salary
-# final tax rate
-# • If salary > 70,000 → 25%
-# • If salary < 30,000 → 5%
-# • If salary is 30,000–70,000 → 15%
+# # Write a program that takes salary as input. Using conditional statements,
+# # calculate the based on these rules:
+# # Q1 salary
+# # final tax rate
+# # • If salary > 70,000 → 25%
+# # • If salary < 30,000 → 5%
+# # • If salary is 30,000–70,000 → 15%
 
-salary=int(input("ENTER YOUR SALARY"))
+# salary=int(input("ENTER YOUR SALARY"))
 
-if "salary<=30000":
-    tax_rate=5
-elif "salary<70000 or salary>30000":
-    tax_rate= 15
-elif "salary>70000":
-    tax_rate=25
+# if "salary<=30000":
+#     tax_rate=5
+# elif "salary<70000 or salary>30000":
+#     tax_rate= 15
+# elif "salary>70000":
+#     tax_rate=25
 
-tax_amount= (salary* tax_rate)/100
+# tax_amount= (salary* tax_rate)/100
 
-print(("YOUR SALARY IS :"),salary)
-print("TAX RATE IS :", tax_rate,"%")
-print("TAX_AMOUNT IS :", tax_amount )
+# print(("YOUR SALARY IS :"),salary)
+# print("TAX RATE IS :", tax_rate,"%")
+# print("TAX_AMOUNT IS :", tax_amount )
 
-# Write a function that takes two integers and prints all even numbers between them (inclusive).
+# # Write a function that takes two integers and prints all even numbers between them (inclusive).
 
-def even_no(first_no, second_no):
-    for i in range(first_no,second_no+1):
-        if(i%2==0):
-            print(i)
+# def even_no(first_no, second_no):
+#     for i in range(first_no,second_no+1):
+#         if(i%2==0):
+#             print(i)
 
-first_no= int(input("ENTER YOUR FIRST NUMBER"))
-second_no= int(input("ENTER THE SECOND NUMBER"))
+# first_no= int(input("ENTER YOUR FIRST NUMBER"))
+# second_no= int(input("ENTER THE SECOND NUMBER"))
 
-even_no(first_no, second_no)
+# even_no(first_no, second_no)
 
-#Write a function that prints the of a number of digits in n
+# #Write a function that prints the of a number of digits in n
 
-i=0
-def digits(n):
-    for i in n:
-        print(i)
+# i=0
+# def digits(n):
+#     for i in n:
+#         print(i)
 
-n=input("ENTER THE DIGIT")
-digits(n)
+# n=input("ENTER THE DIGIT")
+# digits(n)
 
-# Write a function to return the count of the number n
+# # Write a function to return the count of the number n
 
-def count_of_no(n):
-    count=0
-    for i in n:
-        count+=1
-    print(count)
+# def count_of_no(n):
+#     count=0
+#     for i in n:
+#         count+=1
+#     print(count)
 
-n=input('ENTER YOUR NUMBER')
-count_of_no(n)
+# n=input('ENTER YOUR NUMBER')
+# count_of_no(n)
+
+# Write a function to return the sum of digits of a number n
+
+def sum_of_digits(n):
+    total = 0
+    for i in str(n):
+        total += int(i)
+    return total
+
+n = int(input("Enter a number: "))
+print("Sum of digits:", sum_of_digits(n))
