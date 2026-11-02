@@ -118,3 +118,24 @@ operation= input("ENTER THE OPERATION: ")
 result = calculator(a, b, operation)
 
 print("Result:", result)
+
+# Write a function is_prime(n) that returns True if is a prime number and Flasevotherwise, using 
+# a loop.
+
+def is_prime(n):
+    if n <= 1:
+        return False
+
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    else:
+        return True
+
+
+n = int(input("ENTER THE NUMBER: "))
+
+if is_prime(n):
+    print("Prime number")
+else:
+    print("Not a prime number")
