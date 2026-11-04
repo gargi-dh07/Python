@@ -8,7 +8,7 @@
 
 salary=int(input("ENTER YOUR SALARY"))
 
-if "salary<=30000":
+if salary<=30000:
      tax_rate=5
 elif "salary<70000 or salary>30000":
      tax_rate= 15
@@ -153,3 +153,14 @@ elif guess < secret_number:
 
 else:
     print("Correct!")
+
+# Ask the user for Principal (P), Rate (R), Time (T). Convert all to float and compute simple 
+# interest
+
+P = float(input("Enter the Principal amount: "))
+R = float(input("Enter the Rate of interest: "))
+T = float(input("Enter the Time in years: "))
+
+SI = (P * R * T) / 100
+
+print("Simple Interest =", SI)
