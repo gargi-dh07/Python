@@ -164,3 +164,14 @@ T = float(input("Enter the Time in years: "))
 SI = (P * R * T) / 100
 
 print("Simple Interest =", SI)
+
+# Ask the user for a string and check whether it is a palindrome or not.
+
+string = input("Enter a string: ")
+
+reverse = string[::-1]
+
+if string == reverse:
+    print("It is a palindrome")
+else:
+    print("It is not a palindrome")
