@@ -187,4 +187,15 @@ for i in numbers:
 
 average = sum / len(numbers)
 
-print("Average of the numbers is:", average)
+# Given a list of integers compute the average of all numbers in the list.
+
+numbers = [10, 20, 30, 40, 50]
+
+total = 0
+
+for i in numbers:
+    total += i
+
+average = total / len(numbers)
+
+print("Average of the list is:", average)
