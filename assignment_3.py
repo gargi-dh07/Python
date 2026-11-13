@@ -34,3 +34,15 @@ result = list1 + list2
 result.sort()
 
 print("Merged and sorted list:", result)
+
+# Write a program that takes a string from the user and prints the number of spaces in the string.
+
+text = input("Enter a string: ")
+
+count = 0
+
+for i in text:
+    if i == " ":
+        count += 1
+
+print("Number of spaces:", count)
